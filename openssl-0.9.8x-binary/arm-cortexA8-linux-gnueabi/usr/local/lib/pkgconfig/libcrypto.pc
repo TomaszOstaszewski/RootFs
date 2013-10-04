@@ -1,0 +1,11 @@
+prefix=/home/tomek/chroot-jail/chroot-jail/openssl-0.9.8x-binary/arm-cortexA8-linux-gnueabi/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 0.9.8x
+Requires: 
+Libs: -L${libdir} -lcrypto -ldl
+Cflags: -I${includedir} 
